@@ -1,0 +1,16 @@
+# Copy to /etc/systemd/system/ig-relay.service on dudbox.
+# Replace "dudwen" and the paths with your actual username / folder.
+[Unit]
+Description=Instagram <-> Discord relay bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=dudwen
+WorkingDirectory=/home/dudwen/discord_ig_bridge
+ExecStart=/home/dudwen/discord_ig_bridge/venv/bin/python -u relay.py
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+# secrets + login session
+.env
+ig_session.json
+
+# python
+venv/
+.venv/
+__pycache__/
+*.pyc
