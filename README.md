@@ -2,7 +2,7 @@
 
 Two-way relay between one Instagram group chat and one Discord channel.
 
-- **IG → Discord:** polls the IG chat every 15s and reposts through a webhook with the sender's IG name + profile pic.
+- **IG → Discord:** polls the IG chat every 15–21.5s (random, capped at 220/hr) and reposts through a webhook with the sender's IG name + profile pic.
 - **Discord → IG:** a burner IG account sends `[name] message` into the group chat.
 
 > Uses `instagrapi` (unofficial Instagram API). Use a **burner** IG account — automation can get it flagged.
